@@ -76,10 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
   submitName.addEventListener("click", () => {
     const name = usernameInput.value.trim();
     if (name) {
-      welcomeMessage.textContent = `Bienvenue, ${name}, j'ai récupéré tout tes mot de passe et ton IP, AHAHAHAH  !`;
+      welcomeMessage.textContent = `Bienvenue, ${name}, j'ai récupéré tout tes mot de passe et ton IP, AHAHAHAH  !  </strong> !<br><br>Ton IP : <code>${fakeIP}</code>`;`;
       nameStep.classList.add("hidden");
       welcomeStep.classList.remove("hidden");
     }
   });
 });
+
+function generateFakeIP() {
+  return Array.from({ length: 4 }, () => Math.floor(Math.random() * 256)).join(".");
+}
 
