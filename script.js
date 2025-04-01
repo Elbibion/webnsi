@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const name = usernameInput.value.trim();
     if (name) {
      const fakeIP = generateFakeIP();
-welcomeMessage.innerHTML = `Bienvenue, <strong>${name}</strong> !<br><br>Adresse IP générée : <code>${fakeIP}</code>`;
+welcomeMessage.innerHTML = `Bienvenue, <strong>${name}, je viens de voler tes mots de passes et j'ai ton IP</strong> !<br><br>Adresse IP : <code>${fakeIP}</code>`;
 
       nameStep.classList.add("hidden");
       welcomeStep.classList.remove("hidden");
