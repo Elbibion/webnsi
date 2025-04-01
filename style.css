@@ -15,7 +15,9 @@ h1 {
   font-size: 3rem;
   margin: 0;
 }
-
+.textcenter{
+	text-align:center;
+}
 
 .box {
   padding: 10px;
